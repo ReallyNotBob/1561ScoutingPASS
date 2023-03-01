@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "Null/Void",
+      "defaultValue": "Arkansas Regional",
       "required": "true",
       "disabled": "true"
     },
