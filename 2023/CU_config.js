@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "Arkansas Regional",
+      "defaultValue": "Shawnee Regional",
       "required": "true",
       "disabled": "true"
     },
