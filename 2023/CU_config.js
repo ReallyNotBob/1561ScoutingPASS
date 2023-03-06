@@ -101,10 +101,6 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
-      "code": "tct",
-      "type": "cycle"
-    },
     { "name": "Grid Scoring",
       "code": "tsg",
       "type": "clickable_image",
@@ -133,6 +129,10 @@ var config_data = `
     { "name": "Who Defended this bot",
       "code": "who",
       "type": "text"
+    },
+    { "name": "Defended other bots?",
+      "code": "def",
+      "type": "bool"
     },
     { "name": "Smart Placement<br>(creates Links)",
       "code": "lnk",
@@ -224,7 +224,7 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Cones (>2)",
+    { "name": "Dropped Game Pieces<br>(cones or cubes)",
       "code": "dc",
       "type": "bool"
     },
