@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Charged Up",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Name",
+    { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "Shawnee Regional",
+      "defaultValue": "2022carv",
       "required": "true",
       "disabled": "true"
     },
@@ -22,7 +22,6 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "p": "Practice<br>",
         "qm": "Quals<br>",
         "de": "Double Elimination<br>",
         "f": "Finals"
@@ -101,6 +100,10 @@ var config_data = `
     }
   ],
   "teleop": [
+    { "name": "Cycle Timer",
+      "code": "tct",
+      "type": "cycle"
+    },
     { "name": "Grid Scoring",
       "code": "tsg",
       "type": "clickable_image",
@@ -129,10 +132,6 @@ var config_data = `
     { "name": "Who Defended this bot",
       "code": "who",
       "type": "text"
-    },
-    { "name": "Defended other bots?",
-      "code": "def",
-      "type": "bool"
     },
     { "name": "Smart Placement<br>(creates Links)",
       "code": "lnk",
@@ -170,6 +169,10 @@ var config_data = `
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
       "type": "counter"
+    },
+    { "name": "Links Scored",
+      "code": "ls",
+      "type": "counter"
     }
   ],
   "postmatch": [
@@ -183,10 +186,6 @@ var config_data = `
         "x": "Not Observed"
       },
       "defaultValue": "x"
-    },
-    { "name": "Links Scored",
-      "code": "ls",
-      "type": "counter"
     },
     { "name": "Defense Rating",
       "code": "dr",
@@ -224,7 +223,7 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Game Pieces<br>(cones or cubes)",
+    { "name": "Dropped Cones (>2)",
       "code": "dc",
       "type": "bool"
     },
